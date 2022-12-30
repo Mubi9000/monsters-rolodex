@@ -18,6 +18,7 @@ const App = () => {
     .then((users) => setMonsters(users)
     )
   }, []);
+  console.log(`rendered`)
 
   useEffect(() => {
     const newFilteredMonsters = monsters.filter((monster) => {
